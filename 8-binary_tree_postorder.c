@@ -6,14 +6,17 @@
  * @func: pointer to a function to call
  * Return: Nothing.
  */
+
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int))
 {
-	if (tree == NULL || func == NULL)
+	if (tree == NULL)
+		return;
+
+	if (func == NULL)
 		return;
 
 	binary_tree_postorder(tree->left, func);
 	binary_tree_postorder(tree->right, func);
 
 	func(tree->n);
-
 }
