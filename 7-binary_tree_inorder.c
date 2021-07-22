@@ -1,6 +1,6 @@
 #include "binary_trees.h"
 /**
- * binary_tree_preorder - function that goes through binary tree in-order
+ * binary_tree_inorder - function that goes through binary tree in-order
  * @tree: ptr to the root node
  * @func: ptr to a function to call
  * Return: Void.
